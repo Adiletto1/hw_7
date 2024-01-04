@@ -22,6 +22,7 @@ bitday DATE
 
 # UPDATE-UPDATE
 cursor.execute('''UPDATE user SET age=99 WHERE rowid!=2 ''')
+cursor.execute('''DELETE FROM user WHERE rowid % 2 = 0''')
 
 
 
